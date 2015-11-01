@@ -1,0 +1,397 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4348AAAF1BD2A33100231740 /* S3ODBHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 4348AAAC1BD2A33100231740 /* S3ODBHandler.m */; settings = {ASSET_TAGS = (); }; };
+		4348AAB01BD2A33100231740 /* S3OModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4348AAAE1BD2A33100231740 /* S3OModel.m */; settings = {ASSET_TAGS = (); }; };
+		4348AAD31BD2A46600231740 /* S3ODBHandler.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4348AAAB1BD2A33100231740 /* S3ODBHandler.h */; };
+		4348AAD41BD2A46600231740 /* S3OModel.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4348AAAD1BD2A33100231740 /* S3OModel.h */; };
+		43CD1F951BD2B69A00D3070C /* sqlite3_objcTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 43CD1F941BD2B69A00D3070C /* sqlite3_objcTests.m */; };
+		43CD1F971BD2B69A00D3070C /* libsqlite3-objc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4348AA9E1BD2A29200231740 /* libsqlite3-objc.a */; settings = {ASSET_TAGS = (); }; };
+		43CD1FA01BD2B6E700D3070C /* test.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 43CD1F9D1BD2B6E700D3070C /* test.sqlite */; settings = {ASSET_TAGS = (); }; };
+		43CD1FA11BD2B6E700D3070C /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 43CD1F9F1BD2B6E700D3070C /* User.m */; settings = {ASSET_TAGS = (); }; };
+		43CD1FA31BD2B70200D3070C /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 43CD1FA21BD2B70200D3070C /* libsqlite3.0.tbd */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		43CD1F981BD2B69A00D3070C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4348AA961BD2A29200231740 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4348AA9D1BD2A29200231740;
+			remoteInfo = "sqlite3-objc";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4348AA9C1BD2A29200231740 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				4348AAD31BD2A46600231740 /* S3ODBHandler.h in CopyFiles */,
+				4348AAD41BD2A46600231740 /* S3OModel.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		4348AA9E1BD2A29200231740 /* libsqlite3-objc.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libsqlite3-objc.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4348AAAA1BD2A33100231740 /* macros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = macros.h; sourceTree = "<group>"; };
+		4348AAAB1BD2A33100231740 /* S3ODBHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = S3ODBHandler.h; sourceTree = "<group>"; };
+		4348AAAC1BD2A33100231740 /* S3ODBHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = S3ODBHandler.m; sourceTree = "<group>"; };
+		4348AAAD1BD2A33100231740 /* S3OModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = S3OModel.h; sourceTree = "<group>"; };
+		4348AAAE1BD2A33100231740 /* S3OModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = S3OModel.m; sourceTree = "<group>"; };
+		4348AAB11BD2A34D00231740 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		4348AAB21BD2A34D00231740 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		4348AAB41BD2A36400231740 /* sqlite3-objc.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "sqlite3-objc.podspec"; sourceTree = "<group>"; };
+		43CD1F921BD2B69900D3070C /* sqlite3-objcTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "sqlite3-objcTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		43CD1F941BD2B69A00D3070C /* sqlite3_objcTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = sqlite3_objcTests.m; sourceTree = "<group>"; };
+		43CD1F961BD2B69A00D3070C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		43CD1F9D1BD2B6E700D3070C /* test.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = test.sqlite; sourceTree = "<group>"; };
+		43CD1F9E1BD2B6E700D3070C /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		43CD1F9F1BD2B6E700D3070C /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		43CD1FA21BD2B70200D3070C /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4348AA9B1BD2A29200231740 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43CD1F8F1BD2B69900D3070C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43CD1FA31BD2B70200D3070C /* libsqlite3.0.tbd in Frameworks */,
+				43CD1F971BD2B69A00D3070C /* libsqlite3-objc.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4348AA951BD2A29200231740 = {
+			isa = PBXGroup;
+			children = (
+				43CD1FA21BD2B70200D3070C /* libsqlite3.0.tbd */,
+				4348AAB41BD2A36400231740 /* sqlite3-objc.podspec */,
+				4348AAB11BD2A34D00231740 /* LICENSE */,
+				4348AAB21BD2A34D00231740 /* README.md */,
+				4348AAA01BD2A29200231740 /* sqlite3-objc */,
+				43CD1F931BD2B69A00D3070C /* sqlite3-objcTests */,
+				4348AA9F1BD2A29200231740 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4348AA9F1BD2A29200231740 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4348AA9E1BD2A29200231740 /* libsqlite3-objc.a */,
+				43CD1F921BD2B69900D3070C /* sqlite3-objcTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4348AAA01BD2A29200231740 /* sqlite3-objc */ = {
+			isa = PBXGroup;
+			children = (
+				4348AAAA1BD2A33100231740 /* macros.h */,
+				4348AAAB1BD2A33100231740 /* S3ODBHandler.h */,
+				4348AAAC1BD2A33100231740 /* S3ODBHandler.m */,
+				4348AAAD1BD2A33100231740 /* S3OModel.h */,
+				4348AAAE1BD2A33100231740 /* S3OModel.m */,
+			);
+			path = "sqlite3-objc";
+			sourceTree = "<group>";
+		};
+		43CD1F931BD2B69A00D3070C /* sqlite3-objcTests */ = {
+			isa = PBXGroup;
+			children = (
+				43CD1F9D1BD2B6E700D3070C /* test.sqlite */,
+				43CD1F9E1BD2B6E700D3070C /* User.h */,
+				43CD1F9F1BD2B6E700D3070C /* User.m */,
+				43CD1F941BD2B69A00D3070C /* sqlite3_objcTests.m */,
+				43CD1F961BD2B69A00D3070C /* Info.plist */,
+			);
+			path = "sqlite3-objcTests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4348AA9D1BD2A29200231740 /* sqlite3-objc */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4348AAA71BD2A29200231740 /* Build configuration list for PBXNativeTarget "sqlite3-objc" */;
+			buildPhases = (
+				4348AA9A1BD2A29200231740 /* Sources */,
+				4348AA9B1BD2A29200231740 /* Frameworks */,
+				4348AA9C1BD2A29200231740 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "sqlite3-objc";
+			productName = "sqlite3-objc";
+			productReference = 4348AA9E1BD2A29200231740 /* libsqlite3-objc.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		43CD1F911BD2B69900D3070C /* sqlite3-objcTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 43CD1F9A1BD2B69A00D3070C /* Build configuration list for PBXNativeTarget "sqlite3-objcTests" */;
+			buildPhases = (
+				43CD1F8E1BD2B69900D3070C /* Sources */,
+				43CD1F8F1BD2B69900D3070C /* Frameworks */,
+				43CD1F901BD2B69900D3070C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				43CD1F991BD2B69A00D3070C /* PBXTargetDependency */,
+			);
+			name = "sqlite3-objcTests";
+			productName = "sqlite3-objcTests";
+			productReference = 43CD1F921BD2B69900D3070C /* sqlite3-objcTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4348AA961BD2A29200231740 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = mconintet;
+				TargetAttributes = {
+					4348AA9D1BD2A29200231740 = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
+					43CD1F911BD2B69900D3070C = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
+				};
+			};
+			buildConfigurationList = 4348AA991BD2A29200231740 /* Build configuration list for PBXProject "sqlite3-objc" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 4348AA951BD2A29200231740;
+			productRefGroup = 4348AA9F1BD2A29200231740 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4348AA9D1BD2A29200231740 /* sqlite3-objc */,
+				43CD1F911BD2B69900D3070C /* sqlite3-objcTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		43CD1F901BD2B69900D3070C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43CD1FA01BD2B6E700D3070C /* test.sqlite in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4348AA9A1BD2A29200231740 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4348AAB01BD2A33100231740 /* S3OModel.m in Sources */,
+				4348AAAF1BD2A33100231740 /* S3ODBHandler.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43CD1F8E1BD2B69900D3070C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43CD1FA11BD2B6E700D3070C /* User.m in Sources */,
+				43CD1F951BD2B69A00D3070C /* sqlite3_objcTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		43CD1F991BD2B69A00D3070C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4348AA9D1BD2A29200231740 /* sqlite3-objc */;
+			targetProxy = 43CD1F981BD2B69A00D3070C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		4348AAA51BD2A29200231740 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		4348AAA61BD2A29200231740 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4348AAA81BD2A29200231740 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		4348AAA91BD2A29200231740 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		43CD1F9B1BD2B69A00D3070C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				INFOPLIST_FILE = "sqlite3-objcTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mconintet.sqlite3-objcTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		43CD1F9C1BD2B69A00D3070C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				INFOPLIST_FILE = "sqlite3-objcTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mconintet.sqlite3-objcTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4348AA991BD2A29200231740 /* Build configuration list for PBXProject "sqlite3-objc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4348AAA51BD2A29200231740 /* Debug */,
+				4348AAA61BD2A29200231740 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4348AAA71BD2A29200231740 /* Build configuration list for PBXNativeTarget "sqlite3-objc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4348AAA81BD2A29200231740 /* Debug */,
+				4348AAA91BD2A29200231740 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		43CD1F9A1BD2B69A00D3070C /* Build configuration list for PBXNativeTarget "sqlite3-objcTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43CD1F9B1BD2B69A00D3070C /* Debug */,
+				43CD1F9C1BD2B69A00D3070C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4348AA961BD2A29200231740 /* Project object */;
+}
