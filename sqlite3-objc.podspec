@@ -7,5 +7,5 @@ spec.authors      = { 'mconintet' => 'mconintet@gmail.com' }
 spec.summary      = 'A simple toolkit to make sqlite in Objective-C to be little easier.'
 spec.source       = { :git => 'https://github.com/mconintet/sqlite3-objc.git', :tag => '0.0.1' }
 spec.source_files = 'sqlite3-objc'
-spec.ios.deployment_target = '9.0'
+spec.ios.deployment_target = '8.0'
 end
