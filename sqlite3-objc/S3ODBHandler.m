@@ -20,6 +20,7 @@
 {
     self = [super init];
     if (self) {
+        DLOG(@"try to open sqlite: %s", [dbFilePath UTF8String]);
         BOOL result = sqlite3_open([dbFilePath UTF8String], &_dbh);
 
         if (result != SQLITE_OK) {
@@ -275,8 +276,7 @@
 - (NSDictionary*)newRow
 {
     NSMutableDictionary* ret = nil;
-    @autoreleasepool
-    {
+    @autoreleasepool {
         int stepRet = sqlite3_step(_stmt);
         DLOG(@"stepRet: %d", stepRet);
         if (stepRet == SQLITE_ROW) {
@@ -328,8 +328,7 @@
         return false;
     }
 
-    @autoreleasepool
-    {
+    @autoreleasepool {
         unsigned int outCount, i;
         objc_property_t* properties = class_copyPropertyList([obj class], &outCount);
         for (i = 0; i < outCount; i++) {
@@ -354,8 +353,7 @@
     }
 
     id ret = nil;
-    @autoreleasepool
-    {
+    @autoreleasepool {
         ret = [[cls alloc] init];
         unsigned int outCount, i;
         objc_property_t* properties = class_copyPropertyList(cls, &outCount);
