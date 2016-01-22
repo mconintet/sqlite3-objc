@@ -6,8 +6,8 @@
 //  Copyright © 2015 mconintet. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
 #import "S3ODBHandler.h"
+#import <Foundation/Foundation.h>
 
 @interface S3OModel : NSObject
 + (NSString*)tableName;
@@ -21,6 +21,8 @@
                                     asc:(BOOL)asc
                                   limit:(NSUInteger)limit
                                  offset:(NSInteger)offset;
+
++ (instancetype)loadByPk:(NSNumber*)pk;
 
 @property (nonatomic, assign) BOOL isChanged;
 

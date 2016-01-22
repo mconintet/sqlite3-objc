@@ -86,8 +86,7 @@
 {
     self = [super init];
     if (self) {
-        @autoreleasepool
-        {
+        @autoreleasepool {
             NSString* select = [S3ODBHandler selectStrWithColumns:[[self class] columns]
                                                         tableName:[[self class] tableName]];
             NSString* pk = [[self class] pk];
@@ -116,8 +115,7 @@
 {
     self = [super init];
     if (self) {
-        @autoreleasepool
-        {
+        @autoreleasepool {
             NSString* select = [S3ODBHandler selectStrWithColumns:[[self class] columns]
                                                         tableName:[[self class] tableName]];
             S3ODBHandler* dbh = [[self class] newDBHandler];
@@ -148,8 +146,7 @@
     }
 
     BOOL ok = false;
-    @autoreleasepool
-    {
+    @autoreleasepool {
         S3ODBHandler* dbh = [[self class] newDBHandler];
         DLOG(@"%@", dbh);
 
@@ -260,6 +257,11 @@
     [dbh close];
 
     return ret;
+}
+
++ (instancetype)loadByPk:(NSNumber*)pk
+{
+    return [[self alloc] initWithPKValue:pk];
 }
 
 @end
