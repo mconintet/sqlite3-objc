@@ -139,7 +139,7 @@
     return self;
 }
 
-- (BOOL)saveThen:(void (^)(UInt64))then
+- (BOOL)save
 {
     if (!_isChanged) {
         return true;
@@ -178,9 +178,6 @@
                 DLOG(@"failed to save: %@", [dbh errMsg]);
             }
 #endif
-            if (ok && then != nil) {
-                then(0);
-            }
 
             [stmt finalize];
             [dbh close];
@@ -205,8 +202,9 @@
             DLOG(@"failed to save: %@", [dbh errMsg]);
         }
 #endif
-        if (ok && then != nil) {
-            then([dbh lastInsertRowID]);
+
+        if (ok) {
+            [self setValue:@(dbh.lastInsertRowID) forKey:pk];
         }
 
         [stmt finalize];

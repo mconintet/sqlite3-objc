@@ -58,7 +58,7 @@ user = [[User alloc] initWithWhereCondition:@"name=:name" bindParams:@{ @":name"
 
 NSNumber* newAge = [NSNumber numberWithInt:[user.age intValue] + 1];
 user.age = newAge;
-[user saveThen:nil];
+[user save];
 
 NSArray* users = [User newModelsWithWhereCondition:@"name=:name"
                                         bindParams:@{ @":name" : @"name" }

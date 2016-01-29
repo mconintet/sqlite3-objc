@@ -38,7 +38,7 @@
 
     NSNumber* newAge = [NSNumber numberWithInt:[user.age intValue] + 1];
     user.age = newAge;
-    [user saveThen:nil];
+    [user save];
 
     user = [[User alloc] initWithPKValue:[NSNumber numberWithInt:1]];
     XCTAssertTrue([user.age isEqualToNumber:newAge]);

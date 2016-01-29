@@ -31,5 +31,5 @@
 
 - (void)addObservers;
 
-- (BOOL)saveThen:(void (^)(UInt64))then;
+- (BOOL)save;
 @end
