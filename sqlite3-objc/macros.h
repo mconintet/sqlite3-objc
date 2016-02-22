@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-#ifdef DEBUG
+#ifdef DEBUG_SQLITE3_OBJC
 #define DLOG(fmt, ...) NSLog((@"%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__)
 #else
 #define DLOG(...)
@@ -16,7 +16,7 @@
 
 #define int2NSNumber(i) [NSNumber numberWithInt:i]
 
-#ifdef DEBUG
+#ifdef DEBUG_SQLITE3_OBJC
 #define DLOG_NSData(d)                                                   \
     do {                                                                 \
         NSMutableString* log = [NSMutableString stringWithString:@"[ "]; \
